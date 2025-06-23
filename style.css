@@ -61,7 +61,7 @@ li:hover, a:hover {
 }
 
 .ar1 {
-      background-image: url(resources/bghero.png);
+      background-image: url(resources/bghero.webp);
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -270,181 +270,92 @@ li:hover, a:hover {
 }
 
 .ar3content {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
       margin: 0 auto;
       max-width: 90vw ;
       padding: 1.5vw 0;
 }
 
-
-/* WISATA SECTION - SLIDE 1 */
-.ar3con1 {
+.swiper-slide>div[class^="ar3con"] {
       display: flex;
       flex-direction: column;
       text-align: left;
-      padding: 3vh 3vw;
-      width: 60vw;
+      padding: 3vw;
+      width: 100%;
       height: auto;
+      box-sizing: border-box;
+      margin: 0 auto;
+      max-width: 60vw;
 }
 
-.ar3con1head {
-      background-color: rgb(218, 149, 22);
+.swiper-slide>div[class^="ar3con"] .ar3con1head,
+.swiper-slide>div[class^="ar3con"] .ar3con2head,
+.swiper-slide>div[class^="ar3con"] .ar3con3head {
+      background-color: rgb(254, 174, 23);
       padding: 2vh 2vw;
-      margin: 0 0;
+      margin: 0;
       border-top-left-radius: 1vw;
       border-top-right-radius: 1vw;
+      box-sizing: border-box;
 }
 
-.ar3con1head h2 {
-      padding: 0 0;
-      margin: 0 0;
+.swiper-slide>div[class^="ar3con"] h2 {
+      padding: 0;
+      margin: 0;
       font-size: 2vw;
       font-weight: 500;
+      color: black;
 }
 
-.ar3con1bod {
+.swiper-slide>div[class^="ar3con"] .ar3con1bod,
+.swiper-slide>div[class^="ar3con"] .ar3con2bod,
+.swiper-slide>div[class^="ar3con"] .ar3con3bod {
       background-color: white;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       text-align: left;
       padding: 2vh 2vw;
-      margin: 0 0;
+      margin: 0;
       border-bottom-left-radius: 1vw;
       border-bottom-right-radius: 1vw;
+      box-sizing: border-box;
+      box-shadow: 0px 10px 85px rgba(169, 169, 169, 0.1);
 }
 
-.ar3con1bod span {
+.swiper-slide>div[class^="ar3con"] span {
       align-self: center;
       padding: 0 0;
       margin: 0 0;
 }
 
-.ar3con1bod img {
-      width: 30vw;
-      padding: 0 0;
-      margin: 0 0;
-      border-radius: 1vw;
-}
-
-.ar3con1bod p {
-      padding: 0 0;
-      margin: 0 0;
-      font-size: 1.2vw;
-}
-
-
-/* WISATA SECTION - SLIDE 2 */
-.ar3con2 {
-      display: flex;
-      flex-direction: column;
-      text-align: left;
-      padding: 3vh 3vw;
-      width: 60vw;
+.swiper-slide>div[class^="ar3con"] img {
+      max-width: 35vw;
+      width: 35vw;
       height: auto;
-}
-
-.ar3con2head {
-      background-color: rgb(218, 149, 22);
-      padding: 2vh 2vw;
-      margin: 0 0;
-      border-top-left-radius: 1vw;
-      border-top-right-radius: 1vw;
-}
-
-.ar3con2head h2 {
-      padding: 0 0;
-      margin: 0 0;
-      font-size: 2vw;
-      font-weight: 500;
-}
-
-.ar3con2bod {
-      background-color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      text-align: left;
-      padding: 2vh 2vw;
-      margin: 0 0;
-      border-bottom-left-radius: 1vw;
-      border-bottom-right-radius: 1vw;
-}
-
-.ar3con2bod span {
-      align-self: center;
-      padding: 0 0;
-      margin: 0 0;
-}
-
-.ar3con2bod img {
-      width: 30vw;
-      padding: 0 0;
-      margin: 0 0;
+      padding: 0;
+      margin: 0 auto 1vh auto;
       border-radius: 1vw;
+      display: block;
 }
 
-.ar3con2bod p {
-      padding: 0 0;
-      margin: 0 0;
+.swiper-slide>div[class^="ar3con"] p {
+      padding: 0;
+      margin: 0;
       font-size: 1.2vw;
+      line-height: 1.6; 
 }
 
-
-/* WISATA SECTION - SLIDE 3 */
-.ar3con3 {
-      display: flex;
-      flex-direction: column;
-      text-align: left;
-      padding: 3vh 3vw;
-      width: 60vw;
-      height: auto;
+.swiper-button-prev,
+.swiper-button-next {
+      color: rgb(254, 174, 23) !important;
+      --swiper-navigation-size: 3vw;
+      z-index: 10;
 }
 
-.ar3con3head {
-      background-color: rgb(218, 149, 22);
-      padding: 2vh 2vw;
-      margin: 0 0;
-      border-top-left-radius: 1vw;
-      border-top-right-radius: 1vw;
+.swiper-pagination {
+      padding: 1vh 1vw;
 }
 
-.ar3con3head h2 {
-      padding: 0 0;
-      margin: 0 0;
-      font-size: 2vw;
-      font-weight: 500;
-}
-
-.ar3con3bod {
-      background-color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      text-align: left;
-      padding: 2vh 2vw;
-      margin: 0 0;
-      border-bottom-left-radius: 1vw;
-      border-bottom-right-radius: 1vw;
-}
-
-.ar3con3bod span {
-      align-self: center;
-      padding: 0 0;
-      margin: 0 0;
-}
-
-.ar3con3bod img {
-      width: 30vw;
-      padding: 0 0;
-      margin: 0 0;
-      border-radius: 1vw;
-}
-
-.ar3con3bod p {
-      padding: 0 0;
-      margin: 0 0;
-      font-size: 1.2vw;
+.swiper-pagination-bullet-active {
+      background-color: rgb(254, 174, 23) !important;
 }
