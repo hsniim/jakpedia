@@ -104,7 +104,7 @@ li:hover, a:hover {
       display: flex;
       justify-content: space-evenly;
       align-items: flex-start;
-      height: 100vh;
+      height: 130vh;
       padding-top: 10vh;
 }
 
@@ -139,6 +139,7 @@ li:hover, a:hover {
 .ar2sec1content {
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
       text-align: left;
       gap: 3vh;
       background-color: white;
@@ -147,6 +148,17 @@ li:hover, a:hover {
       border-bottom-left-radius: 1vw;
       border-bottom-right-radius: 1vw;
       box-shadow: 0px 10px 85px rgba(169, 169, 169, 0.1);
+}
+
+.ar2sec1content span {
+      align-self: center;
+}
+
+.ar2sec1content img {
+      width: 45vw;
+      border-radius: 1vw;
+      padding: 0 0;
+      margin: 0 0;
 }
 
 .ar2sec1content p {
@@ -228,4 +240,91 @@ li:hover, a:hover {
       font-weight: 400;
       padding: 0 0;
       margin: 0 0;
+}
+
+.ar3 {
+      height: 100vh;
+}
+
+.ar3head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+.ar3head h2 {
+      padding: 0 0;
+      margin: 0 0;
+      font-size: 3.5vw;
+      font-weight: 600;
+}
+
+.ar3head span {
+      color: rgb(218, 149, 22);
+}
+
+.ar3head p {
+      padding: 0 0;
+      margin: 0 0;
+      font-size: 1.3vw;
+}
+
+.ar3content {
+      display: flex;
+      justify-content: space-evenly;      
+}
+
+.ar3con1 {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      padding: 3vh 3vw;
+      width: 60vw;
+      height: auto;
+}
+
+.ar3con1head {
+      background-color: rgb(218, 149, 22);
+      padding: 2vh 2vw;
+      margin: 0 0;
+      border-top-left-radius: 1vw;
+      border-top-right-radius: 1vw;
+}
+
+.ar3con1head h2 {
+      padding: 0 0;
+      margin: 0 0;
+      font-size: 2vw;
+      font-weight: 500;
+}
+
+.ar3con1bod {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      padding: 2vh 2vw;
+      margin: 0 0;
+      border-bottom-left-radius: 1vw;
+      border-bottom-right-radius: 1vw;
+}
+
+.ar3con1bod span {
+      align-self: center;
+      padding: 0 0;
+      margin: 0 0;
+}
+
+.ar3con1bod img {
+      width: 30vw;
+      padding: 0 0;
+      margin: 0 0;
+      border-radius: 1vw;
+}
+
+.ar3con1bod p {
+      padding: 0 0;
+      margin: 0 0;
+      font-size: 1.2vw;
 }
