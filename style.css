@@ -27,6 +27,8 @@ nav {
 }
 
 .nav1 {
+      display: flex;
+      align-items: center;
       padding: 0 0;
       margin: 0 0;
 }
@@ -58,6 +60,46 @@ li a {
 
 li:hover, a:hover {
       color: rgb(218, 149, 22);
+}
+
+.ham-menu {
+      display: none;
+}
+
+.side-menu {
+      position: fixed;
+      top: 0;
+      right: -300px;
+      /* Sembunyikan di luar layar (ke kanan) */
+      width: 280px;
+      /* Lebar menu */
+      height: 100%;
+      background-color: #444;
+      padding-top: 60px;
+      /* Biarkan ruang untuk navbar jika dibutuhkan */
+      box-shadow: -3px 0 10px rgba(0, 0, 0, 0.2);
+      transition: right 0.3s ease-in-out;
+      /* Transisi untuk saat muncul/sembunyi */
+      z-index: 99;
+      /* Di bawah navbar tapi di atas konten */
+}
+
+.side-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+}
+
+.side-menu ul li a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      border-bottom: 1px solid #555;
+      transition: background-color 0.3s ease;
+}
+
+.side-menu ul li a:hover {
+      background-color: #555; 
 }
 
 .ar1 {
@@ -358,4 +400,119 @@ li:hover, a:hover {
 
 .swiper-pagination-bullet-active {
       background-color: rgb(254, 174, 23) !important;
+}
+
+
+/* ############################################################# MOBILE DEVICE ################################################################### */
+@media (max-width: 481px) {
+
+      nav {
+            position: fixed;
+            display: flex;
+            width: calc(100% - 6vw);
+            height: 15px;
+            background-color: white;
+            top: 3vh;
+            left: 0;
+            right: 0;
+            padding: 2.5vh 0.5vw;
+            margin: auto;
+            border-radius: 2vw;
+            justify-content: space-between;
+            z-index: 1000;
+            box-shadow: 0px 10px 85px rgba(0, 0, 0, 0.1);     
+      }
+
+      .nav1 {
+            padding: 0 0;
+            margin: 0 0;
+      }
+      
+      .nav1 p {
+            color: black;
+            font-family: "Lexend", sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            padding: 0vh 1vw;
+            margin: 0 0;
+            align-items: center;
+      }
+      
+      .nav2 {
+            display: none;
+            list-style: none;
+            align-items: center;
+            font-size: 1.3vw;
+            padding: 0 0;
+            margin: 0 0;
+      }
+      
+      li a {
+            text-decoration: none;
+            color: black;
+            padding: 0vh 1vw;
+      }
+      
+      li:hover,
+      a:hover {
+            color: rgb(218, 149, 22);
+      }
+      
+      .ham-menu {
+            display: flex;
+            align-items: center;
+            padding: 0 0;
+            margin: 0 0;
+            background-color: unset;
+      }
+      
+      .ham-menu img {
+            width: 20px;
+            height: auto;
+            padding: 0 0;
+            margin: 0 0;
+      }
+      
+      .ham-menu button {
+            background-color: unset;
+            border: unset;
+            padding: 1vh 1vw;
+            margin: 0 0;     
+      }
+      
+      .side-menu {
+            position: fixed;
+            top: 0;
+            right: -300px;
+            /* Sembunyikan di luar layar (ke kanan) */
+            width: 280px;
+            /* Lebar menu */
+            height: 100%;
+            background-color: #444;
+             padding-top: 60px;
+             /* Biarkan ruang untuk navbar jika dibutuhkan */
+             box-shadow: -3px 0 10px rgba(0, 0, 0, 0.2);
+             transition: right 0.3s ease-in-out;
+             /* Transisi untuk saat muncul/sembunyi */
+            z-index: 99;
+            /* Di bawah navbar tapi di atas konten */
+      }
+      
+      .side-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+      }
+      
+      .side-menu ul li a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            border-bottom: 1px solid #555;
+            transition: background-color 0.3s ease;
+      }
+      
+      .side-menu ul li a:hover {
+            background-color: #555;     
+      }
 }
