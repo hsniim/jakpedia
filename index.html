@@ -7,24 +7,28 @@
       <link rel="stylesheet" href="style.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
       <header>
-            <nav>
+            <nav class="navbar">
                   <ul class="nav1">
                         <p>Jakarta</p>
                   </ul>
-                  <ul class="nav2">
+
+                  <div class="ham-menu" id="hamburgerMenu">
+                        <button class="menu-toggle-btn"><img src="resources/burger-menu-svgrepo-com.svg"
+                                    alt="Menu"></button>
+                  </div>
+
+                  <ul class="nav-links" id="navLinks">
                         <li><a href="#home">Beranda</a></li>
                         <li><a href="#seja">Sejarah</a></li>
                         <li><a href="#wis">Wisata</a></li>
                   </ul>
-                  <div class="ham-menu">
-                        <button><img src="resources/burger-menu-svgrepo-com.svg" alt=""></button>
-                  </div>
             </nav>
       </header>
 
@@ -35,10 +39,8 @@
                               <h1><span>Jakarta</span></h1>
                               <p>Kota dengan sejuta pesona dan denyut kehidupan yang tak pernah berhenti</p>
                         </div>
-                        <div class="ar1sec2">
-                              <img src="" alt="">
-                        </div>
                   </article>
+
                   <article class="ar2" id="seja">
                         <div class="ar2sec1">
                               <div class="ar2sec1title">
@@ -46,18 +48,28 @@
                               </div>
                               <div class="ar2sec1content">
                                     <span><img src="resources/Jakartadulu.webp" alt=""></span>
-                                    <p>Jakarta bermula dari pelabuhan kecil di estuari sungai Ciliwung sekitar 500 tahun yang lalu. Lambat laun, pelabuhan
-                                    kecil ini bertransformasi menjadi pusat perdagangan internasional yang mempertemukan ragam bangsa di dunia. Rekam jejak
-                                    Jakarta bisa ditemukan melalui beberapa prasasti yang ditemukan di sekitar pelabuhan dan sepanjang sungai Ciliwung.
-                                    
-                                    Sejarah tentang Jakarta tercatat oleh para pengembara Eropa di abad ke-16. Kala itu, Jakarta marak disebut sebagai
-                                    Kalapa, yang merupakan pelabuhan utama kerajaan Sunda. Pelabuhan yang turut menjadi pusat perniagaan Portugis kala itu
-                                    diserang oleh Pangeran Fatahillah pada 22 Juni 1527. Sejak itu, Pangeran Fatahillah mengganti nama Sunda Kalapa menjadi
-                                    Jayakarta. Tanggal penyerangan itu hinggakini diperingati sebagai HUT Kota Jakarta.
+                                    <p>Jakarta bermula dari pelabuhan kecil di estuari sungai Ciliwung sekitar 500 tahun
+                                          yang lalu. Lambat laun, pelabuhan
+                                          kecil ini bertransformasi menjadi pusat perdagangan internasional yang
+                                          mempertemukan ragam bangsa di dunia. Rekam jejak
+                                          Jakarta bisa ditemukan melalui beberapa prasasti yang ditemukan di sekitar
+                                          pelabuhan dan sepanjang sungai Ciliwung.
 
-                                    Sejak Proklamasi Kemerdekaan Republik Indonesia tahun 1945, Jakarta menjadi pusat kegiatan politik dan pemerintahan pada
-                                    masa awal kemerdekaan. Kemudian secara resmi pada tahun 1966 Jakarta menjadi Ibu Kota Negara. Sebagai Ibu Kota Negara,
-                                    Jakarta berkembang pesat dengan dibangunnya lokasi bisnis, akomodasi, hingga kedutaan besar bagi negara sahabat.
+                                          Sejarah tentang Jakarta tercatat oleh para pengembara Eropa di abad ke-16.
+                                          Kala itu, Jakarta marak disebut sebagai
+                                          Kalapa, yang merupakan pelabuhan utama kerajaan Sunda. Pelabuhan yang turut
+                                          menjadi pusat perniagaan Portugis kala itu
+                                          diserang oleh Pangeran Fatahillah pada 22 Juni 1527. Sejak itu, Pangeran
+                                          Fatahillah mengganti nama Sunda Kalapa menjadi
+                                          Jayakarta. Tanggal penyerangan itu hinggakini diperingati sebagai HUT Kota
+                                          Jakarta.
+
+                                          Sejak Proklamasi Kemerdekaan Republik Indonesia tahun 1945, Jakarta menjadi
+                                          pusat kegiatan politik dan pemerintahan pada
+                                          masa awal kemerdekaan. Kemudian secara resmi pada tahun 1966 Jakarta menjadi
+                                          Ibu Kota Negara. Sebagai Ibu Kota Negara,
+                                          Jakarta berkembang pesat dengan dibangunnya lokasi bisnis, akomodasi, hingga
+                                          kedutaan besar bagi negara sahabat.
                                     </p>
                                     <p><span>Sumber: <a href="https://www.jakarta.go.id/sejarah-jakarta">Pemprov DKI Jakarta</a></span></p>
                               </div>
@@ -85,6 +97,7 @@
                               </div>
                         </aside>
                   </article>
+
                   <article class="ar3" id="wis">
                         <div class="ar3head">
                               <h2>-- <span>Wisata</span> Jakarta --</h2>
@@ -92,28 +105,32 @@
                         </div>
                         <div class="ar3content">
                               <div class="swiper">
-                                    <!-- Additional required wrapper -->
                                     <div class="swiper-wrapper">
-                                          <!-- Slides -->
                                           <div class="swiper-slide">
                                                 <div class="ar3con1">
                                                       <div class="ar3con1head">
                                                             <h2>Monumen Nasional (Monas)</h2>
                                                       </div>
                                                       <div class="ar3con1bod">
-                                                            <span><img src="resources/monas.webp" alt="Monumen Nasional"></span>
+                                                            <span><img src="resources/monas.webp"
+                                                                        alt="Monumen Nasional"></span>
                                                             <p>Monas adalah singkatan dari Monumen Nasional.
-                                                                  Ini adalah salah satu landmark paling ikonik dan kebanggaan Indonesia,
-                                                                  yang terletak di pusat Kota Jakarta, tepatnya di Lapangan Medan Merdeka.
-                                                                  Gagasan pembangunan Monas dicetuskan oleh Presiden Soekarno pada tahun 1950-an setelah ibu kota
+                                                                  Ini adalah salah satu landmark paling ikonik dan
+                                                                  kebanggaan Indonesia,
+                                                                  yang terletak di pusat Kota Jakarta, tepatnya di
+                                                                  Lapangan Medan Merdeka.
+                                                                  Gagasan pembangunan Monas dicetuskan oleh Presiden
+                                                                  Soekarno pada tahun 1950-an setelah ibu kota
                                                                   kembali dari Yogyakarta
-                                                                  ke Jakarta. Pembangunan Monas dimulai pada 17 Agustus 1961 dengan peletakan pasak beton pertama oleh
+                                                                  ke Jakarta. Pembangunan Monas dimulai pada 17 Agustus
+                                                                  1961 dengan peletakan pasak beton pertama oleh
                                                                   Presiden Soekarno.
-                                                                  Monumen ini dirancang oleh arsitek Frederich Silaban dan R.M. Soedarsono. Monas kemudian diresmikan
+                                                                  Monumen ini dirancang oleh arsitek Frederich Silaban
+                                                                  dan R.M. Soedarsono. Monas kemudian diresmikan
                                                                   dan dibuka untuk
                                                                   umum pada tahun 1975 oleh Presiden Soeharto.
                                                             </p>
-                                                      </div>            
+                                                      </div>
                                                 </div>
                                           </div>
                                           <div class="swiper-slide">
@@ -122,17 +139,31 @@
                                                             <h2>Museum Fatahillah</h2>
                                                       </div>
                                                       <div class="ar3con2bod">
-                                                            <span><img src="resources/fatah.webp" alt="Museum Fatahillah"></span>
+                                                            <span><img src="resources/fatah.webp"
+                                                                        alt="Museum Fatahillah"></span>
                                                             <p>
-                                                                  Museum Fatahillah memiliki nama resmi Museum Sejarah Jakarta adalah sebuah museum yang terletak di Jalan Taman
-                                                                  Fatahillah Nomor 1, Jakarta Barat, Daerah Khusus Ibukota Jakarta, Indonesia dengan luas lebih dari 1.300 meter
+                                                                  Museum Fatahillah memiliki nama resmi Museum Sejarah
+                                                                  Jakarta adalah sebuah museum yang terletak di Jalan
+                                                                  Taman
+                                                                  Fatahillah Nomor 1, Jakarta Barat, Daerah Khusus
+                                                                  Ibukota Jakarta, Indonesia dengan luas lebih dari
+                                                                  1.300 meter
                                                                   persegi.
-                                                                  
-                                                                  Bangunan ini dahulu merupakan Balai Kota Batavia (bahasa Belanda: Stadhuis van Batavia) yang dibangun pada tahun
-                                                                  1707-1710 atas perintah Gubernur Jenderal Joan van Hoorn. Bangunan ini menyerupai Istana Dam di Amsterdam, terdiri
-                                                                  atas bangunan utama dengan dua sayap di bagian timur dan barat serta bangunan sanding yang digunakan sebagai kantor,
-                                                                  ruang pengadilan, dan ruang-ruang bawah tanah yang dipakai sebagai penjara. Pada tanggal 30 Maret 1974, bangunan ini
-                                                                  kemudian diresmikan oleh bapak Ali Sadikin sebagai Museum Sejarah Jakarta.
+
+                                                                  Bangunan ini dahulu merupakan Balai Kota Batavia
+                                                                  (bahasa Belanda: Stadhuis van Batavia) yang dibangun
+                                                                  pada tahun
+                                                                  1707-1710 atas perintah Gubernur Jenderal Joan van
+                                                                  Hoorn. Bangunan ini menyerupai Istana Dam di
+                                                                  Amsterdam, terdiri
+                                                                  atas bangunan utama dengan dua sayap di bagian timur
+                                                                  dan barat serta bangunan sanding yang digunakan
+                                                                  sebagai kantor,
+                                                                  ruang pengadilan, dan ruang-ruang bawah tanah yang
+                                                                  dipakai sebagai penjara. Pada tanggal 30 Maret 1974,
+                                                                  bangunan ini
+                                                                  kemudian diresmikan oleh bapak Ali Sadikin sebagai
+                                                                  Museum Sejarah Jakarta.
                                                             </p>
                                                       </div>
                                                 </div>
@@ -143,16 +174,31 @@
                                                             <h2>Taman Mini Indonesia Indah (TMII)</h2>
                                                       </div>
                                                       <div class="ar3con3bod">
-                                                            <span><img src="resources/tmii.webp" alt="Taman Mini Indonesia Indah"></span>
+                                                            <span><img src="resources/tmii.webp"
+                                                                        alt="Taman Mini Indonesia Indah"></span>
                                                             <p>
-                                                                  Taman Mini Indonesia Indah (disingkat TMII; sebelumnya Taman Mini "Indonesia Indah" dengan tanda kutip) merupakan suatu
-                                                                  taman hiburan bertemakan kebudayaan Indonesia di Jakarta Timur, DKI Jakarta, yang memiliki area seluas kurang lebih 147
-                                                                  hektare atau 1,47 kilometer persegi. Taman ini merupakan rangkuman kebudayaan bangsa Indonesia, yang mencakup
-                                                                  berbagai aspek kehidupan sehari-hari masyarakat 26 provinsi Indonesia (pada tahun 1975) yang ditampilkan dalam anjungan
-                                                                  daerah berarsitektur tradisional, serta menampilkan aneka busana, tarian, dan tradisi daerah. Gagasan pembangunan suatu 
-                                                                  miniatur yang memuat kelengkapan Indonesia dengan segala isinya ini dicetuskan oleh Ibu
-                                                                  Negara, Siti Hartinah, yang lebih dikenal dengan sebutan Ibu Tien Soeharto. Gagasan ini tercetus pada suatu pertemuan di
-                                                                  Jalan Cendana no. 8 Jakarta pada tanggal 13 Maret 1970.
+                                                                  Taman Mini Indonesia Indah (disingkat TMII; sebelumnya
+                                                                  Taman Mini "Indonesia Indah" dengan tanda kutip)
+                                                                  merupakan suatu
+                                                                  taman hiburan bertemakan kebudayaan Indonesia di
+                                                                  Jakarta Timur, DKI Jakarta, yang memiliki area seluas
+                                                                  kurang lebih 147
+                                                                  hektare atau 1,47 kilometer persegi. Taman ini
+                                                                  merupakan rangkuman kebudayaan bangsa Indonesia, yang
+                                                                  mencakup
+                                                                  berbagai aspek kehidupan sehari-hari masyarakat 26
+                                                                  provinsi Indonesia (pada tahun 1975) yang ditampilkan
+                                                                  dalam anjungan
+                                                                  daerah berarsitektur tradisional, serta menampilkan
+                                                                  aneka busana, tarian, dan tradisi daerah. Gagasan
+                                                                  pembangunan suatu
+                                                                  miniatur yang memuat kelengkapan Indonesia dengan
+                                                                  segala isinya ini dicetuskan oleh Ibu
+                                                                  Negara, Siti Hartinah, yang lebih dikenal dengan
+                                                                  sebutan Ibu Tien Soeharto. Gagasan ini tercetus pada
+                                                                  suatu pertemuan di
+                                                                  Jalan Cendana no. 8 Jakarta pada tanggal 13 Maret
+                                                                  1970.
                                                             </p>
                                                       </div>
                                                 </div>
@@ -164,32 +210,88 @@
                                     <div class="swiper-button-prev"></div>
                                     <div class="swiper-button-next"></div>
                               </div>
-                        </div>      
+                        </div>
                   </article>
             </div>
       </main>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="script.js"></script>
       <script>
             const swiper = new Swiper('.swiper', {
-                        // Optional parameters
-                        direction: 'horizontal',
-                        loop: true,
+                  direction: 'horizontal',
+                  loop: true,
+                  pagination: {
+                        el: '.swiper-pagination',
+                  },
+                  navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                  },
+                  scrollbar: {
+                        el: '.swiper-scrollbar',
+                  },
+            });
 
-                        // If we need pagination
-                        pagination: {
-                              el: '.swiper-pagination',
-                        },
+            document.addEventListener('DOMContentLoaded', () => {
+                        const hamburgerMenuButton = document.querySelector('.ham-menu .menu-toggle-btn');
+                        const navLinks = document.getElementById('navLinks');
+                        const mainDropdowns = document.querySelectorAll('.nav-links .dropdown');
 
-                        // Navigation arrows
-                        navigation: {
-                              nextEl: '.swiper-button-next',
-                              prevEl: '.swiper-button-prev',
-                        },
+                        const closeAllDropdowns = () => {
+                              mainDropdowns.forEach(dropdown => {
+                                    dropdown.classList.remove('active');
+                              });
+                        };
 
-                        // And if we need scrollbar
-                        scrollbar: {
-                              el: '.swiper-scrollbar',
-                        },
+                        hamburgerMenuButton.addEventListener('click', (event) => {
+                              event.stopPropagation(); 
+                              navLinks.classList.toggle('active');
+
+                              if (!navLinks.classList.contains('active')) {
+                                    closeAllDropdowns();
+                              }
+                        });
+
+                        mainDropdowns.forEach(dropdown => {
+                              const dropbtnMain = dropdown.querySelector('.dropbtn-main');
+                              dropbtnMain.addEventListener('click', (e) => {
+                                    if (window.innerWidth <= 481) {
+                                          e.preventDefault();
+                                          e.stopPropagation();
+
+                                          mainDropdowns.forEach(otherDropdown => {
+                                                if (otherDropdown !== dropdown) {
+                                                      otherDropdown.classList.remove('active');
+                                                }
+                                          });
+
+                                          dropdown.classList.toggle('active');
+                                    }
+                              });
+                        });
+
+                        document.addEventListener('click', (e) => {
+                              if (!navLinks.contains(e.target) && !hamburgerMenuButton.contains(e.target)) {
+                                    navLinks.classList.remove('active');
+                                    closeAllDropdowns();
+                              }
+                        });
+
+                        window.addEventListener('resize', () => {
+                              if (window.innerWidth > 481) {
+                                    navLinks.classList.remove('active');
+                                    closeAllDropdowns();
+                              }
+                        });
+
+                        navLinks.querySelectorAll('a').forEach(link => {
+                              link.addEventListener('click', () => {
+                                    if (window.innerWidth <= 481) {
+                                          navLinks.classList.remove('active');
+                                          closeAllDropdowns();
+                                    }
+                              });
+                        });
                   });
       </script>
 </body>
