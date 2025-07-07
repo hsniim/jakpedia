@@ -109,10 +109,9 @@ body {
       margin: 0;
 }
 
-.ar1sec1 h1,
-.ar1sec1 p {
+.ar1sec1 h1 {
       padding: 0;
-      margin: 0;
+      margin: 0;  
       line-height: 1.4;
 }
 
@@ -123,10 +122,6 @@ body {
       font-family: "Lexend", sans-serif;
       font-weight: 600;
       font-size: 7vw;
-}
-
-.ar1sec1 p {
-      font-size: 1.5vw;
 }
 
 .ar2 {
@@ -394,7 +389,7 @@ body {
 @media (max-width: 481px) {
       .navbar {
             width: calc(100% - 6vw);
-            height: 3vh;
+            height: auto;
             padding: 2.5vh 0.5vw;
             border-radius: 2vw;
             box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
@@ -418,11 +413,17 @@ body {
             margin: 0 0;
             display: flex;
             position: relative;
-            z-index: 1001;
+            z-index: 1000;
       }
 
       .ham-menu button {
-            padding: 0 1vw;
+            padding: 0 1.5vw;
+            margin: 0 0;
+            align-items: center;
+      }
+
+      .ham-menu img {
+            padding: 0 0;
             margin: 0 0;
       }
 
@@ -434,8 +435,8 @@ body {
             top: 100%;
             left: 0;
             background-color: white;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 999;
+            box-shadow: 0px 10px 85px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
             border-radius: 0 0 2vw 2vw;
             overflow: hidden;
             padding-bottom: 10px;
@@ -465,5 +466,101 @@ body {
       .nav-links li a {
             font-size: 18px;
             padding: 10px 0;
+      }
+
+      .ar1 {
+            height: 100vh;
+      }
+
+      .ar1sec1 {
+            width: 100%;
+            align-items: center;
+      }
+
+      .ar1sec1 span {
+            padding: 0.5vh 0.5vw;
+            border-radius: 1vw;
+            color: black;
+            font-family: "Lexend", sans-serif;
+            font-weight: 600;
+            font-size: 10vw;
+      }
+      
+      .ar1sec1 p {
+            font-size: 3vw;
+            text-align: center;   
+      }
+
+      .ar2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            padding: 0 0;
+            margin: 3vh 0;
+      }
+
+      .ar2sec1 {
+            order: 2;
+            width: 90%;
+      }
+
+      .ar2sec1title h2 {
+            font-size: 4vw;
+      }
+
+      .ar2sec1content p {
+            font-size: 3vw;
+      }
+
+      .ar2sec1 img {
+            width: 100%;
+      }
+
+      .ar2sec2 {
+            padding: 2vh 2vw;
+            order: 1;
+            margin: 3vh;
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+      }
+      
+      .ar2sec2pic {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding: 0 0;
+            margin: 0 0;
+            align-items: center;
+      }
+      
+      .ar2sec2pic img {
+            padding: 0 0;
+            margin: 0 0;
+            width: 20vw;
+            height: auto;
+      }
+      
+      .ar2sec2bod {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            padding: 0 1vw;
+            margin: 0 0;
+            justify-content: center;     
+            align-items: end;
+      }
+
+      .ar2sec2head {
+            font-size: 5vw;            
+      }
+
+      .ar2sec2text1 p, .ar2sec2text2 p {
+            padding: 0 0;
+            font-size: 2vw;
       }
 }
