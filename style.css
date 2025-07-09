@@ -124,11 +124,15 @@ body {
       font-size: 7vw;
 }
 
+.ar1sec1 p {
+      font-size: 1.5vw;
+}
+
 .ar2 {
       display: flex;
       justify-content: space-evenly;
       align-items: flex-start;
-      height: 130vh;
+      height: auto;
       padding-top: 10vh;
 }
 
@@ -267,7 +271,8 @@ body {
 }
 
 .ar3 {
-      height: 100vh;
+      height: auto;
+      padding: 10vh 0;
 }
 
 .ar3head {
