@@ -353,7 +353,6 @@ body {
 }
 
 .swiper-slide>div[class^="ar3con"] img {
-      max-width: 35vw;
       width: 35vw;
       height: auto;
       padding: 0;
@@ -407,7 +406,6 @@ body {
             padding: 0 1vw;
       }
 
-      /* Tampilkan .ham-menu di mobile */
       .ham-menu {
             padding: 0 0;
             margin: 0 0;
@@ -512,10 +510,17 @@ body {
 
       .ar2sec1content p {
             font-size: 3vw;
+            padding: 0 2vw;
+      }
+
+      .ar2sec1content span {
+            font-size: 2vw;
       }
 
       .ar2sec1 img {
             width: 100%;
+            height: auto;
+            max-width: 80vw;
       }
 
       .ar2sec2 {
@@ -562,5 +567,52 @@ body {
       .ar2sec2text1 p, .ar2sec2text2 p {
             padding: 0 0;
             font-size: 2vw;
+      }
+
+      .ar3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+      }
+
+      .ar3head h2 {
+            font-size: 6vw;
+      }
+      
+      .ar3head p {
+            font-size: 2.5vw;
+      }
+
+      .swiper-slide>div[class^="ar3con"] {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            padding: 5vw;
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            max-width: 85vw;     
+      }
+      
+      .swiper-slide>div[class^="ar3con"] img {
+            width: 95%;
+            height: auto;
+            padding: 0;
+            margin: 0 auto 1vh auto;
+            border-radius: 1vw;
+            display: block;     
+      }
+
+      .swiper-slide>div[class^="ar3con"] h2 {
+            padding: 0;
+            margin: 0;
+            font-size: 3.5vw;
+      }
+
+      .swiper-slide>div[class^="ar3con"] p {
+            padding: 2vw;
+            margin: 0;
+            font-size: 2.5vw;
+            line-height: 1.6;     
       }
 }
