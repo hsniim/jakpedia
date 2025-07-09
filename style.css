@@ -388,6 +388,50 @@ body {
       background-color: rgb(254, 174, 23) !important;
 }
 
+.foot1 {
+      background-color: white;
+      height: 10%;
+      max-height: 15vh;
+      padding: 3vh 3vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.foothead {
+      font-family: "Lexend", sans-serif;
+      font-size: 1.2vw;
+      padding: 0 0;
+      margin: 0 0;
+}
+
+.fb1 {
+      font-size: 1.3vw;
+      padding: 0 0;
+      margin: 0 0;
+}
+
+.fb2 {
+      font-size: 1.3vw;
+      text-align: right;
+      padding: 0 0;
+      margin: 0 0;
+}
+
+.fb2 li, .fb2 a {
+      color: black;
+      text-decoration: none;
+      list-style: none;
+      padding: 0 0;
+      margin: 0 0;
+}
+
+.fb2 li:hover, .fb2 a:hover {
+      color: rgb(254, 174, 23);
+}
+
+
+
 
 /* ############################# MOBILE DEVICE ##################################################################################################### */
 @media (max-width: 481px) {
